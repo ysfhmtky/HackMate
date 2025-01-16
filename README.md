@@ -24,26 +24,30 @@ HackMate is a Python-based tool that simplifies payload generation and listener 
    ```bash
    git clone https://github.com/ysfhmtky/HackMate.git
    cd HackMate
-Install the required Python libraries:
+   ```
 
-bash
-Copy
-pip install pyfiglet colorama
-Ensure Metasploit Framework is installed:
+2. Install the required Python libraries:
+   ```bash
+   pip install pyfiglet colorama
+   ```
 
-bash
-Copy
-sudo apt install metasploit-framework
-Run HackMate:
+3. Ensure Metasploit Framework is installed:
+   ```bash
+   sudo apt install metasploit-framework
+   ```
 
-bash
-Copy
-python HackMate.py
-Usage
-Starting the Program
+4. Run HackMate:
+   ```bash
+   python HackMate.py
+   ```
+
+## Usage
+
+### Starting the Program
+
 When you start the program, you will see the following menu:
 
-Copy
+```
 Payload Options:
 1. Windows Payloads
 2. Linux Payloads
@@ -52,52 +56,47 @@ Payload Options:
 5. Web Payloads
 6. Staged vs. Stage-less Payloads
 0. Exit
-Generating a Payload
-Select the desired payload type (e.g., Windows Payloads).
+```
 
-Choose the payload (e.g., windows/meterpreter/reverse_tcp).
+### Generating a Payload
 
-Enter the LHOST (your IP) and LPORT (your port).
+1. Select the desired payload type (e.g., Windows Payloads).
+2. Choose the payload (e.g., `windows/meterpreter/reverse_tcp`).
+3. Enter the **LHOST** (your IP) and **LPORT** (your port).
+4. Specify the output file name (e.g., `payload.exe`).
+5. Optionally, provide an encoder and iterations.
+6. The payload will be generated, and a Metasploit listener will start automatically.
 
-Specify the output file name (e.g., payload.exe).
+### Stopping the Listener
 
-Optionally, provide an encoder and iterations.
+To stop the listener and return to the main menu, type `exit`.
 
-The payload will be generated, and a Metasploit listener will start automatically.
+## Examples
 
-Stopping the Listener
-To stop the listener and return to the main menu, type exit.
+### Generating a Windows Payload
 
-Examples
-Generating a Windows Payload
-Select Windows Payloads.
+1. Select **Windows Payloads**.
+2. Choose `windows/meterpreter/reverse_tcp`.
+3. Enter the **LHOST** and **LPORT** values.
+4. Specify the output file name (e.g., `payload.exe`).
+5. The payload will be generated, and a listener will start.
 
-Choose windows/meterpreter/reverse_tcp.
+### Generating a Linux Payload
 
-Enter the LHOST and LPORT values.
+1. Select **Linux Payloads**.
+2. Choose `linux/x86/meterpreter_reverse_tcp`.
+3. Enter the **LHOST** and **LPORT** values.
+4. Specify the output file name (e.g., `payload.elf`).
+5. The payload will be generated, and a listener will start.
 
-Specify the output file name (e.g., payload.exe).
+## Contributing
 
-The payload will be generated, and a listener will start.
-
-Generating a Linux Payload
-Select Linux Payloads.
-
-Choose linux/x86/meterpreter_reverse_tcp.
-
-Enter the LHOST and LPORT values.
-
-Specify the output file name (e.g., payload.elf).
-
-The payload will be generated, and a listener will start.
-
-Contributing
 Contributions are welcome! If you'd like to contribute, please fork the repository and create a pull request. Bug fixes and feature suggestions are appreciated.
 
-License
+## License
+
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Contact
-GitHub: ysfhmtky
+## Contact
 
-
+GitHub: [ysfhmtky](https://github.com/ysfhmtky)
